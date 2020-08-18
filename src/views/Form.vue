@@ -1,4 +1,4 @@
-<!-- VIDEO DEL FORMULARIOhttps://www.youtube.com/watch?v=Z1LxWfjjdfU&list=PLPl81lqbj-4J-gfAERGDCdOQtVgRhSvIT&index=29 Y LA PAGINA DE BOOTSTRAP DEL FORMULARIO https://bootstrap-vue.org/docs/components/form-input -->
+<!-- VIDEO DEL FORMULARIO https://www.youtube.com/watch?v=Z1LxWfjjdfU&list=PLPl81lqbj-4J-gfAERGDCdOQtVgRhSvIT&index=29 Y LA PAGINA DE BOOTSTRAP DEL FORMULARIO https://bootstrap-vue.org/docs/components/form-input -->
 <template>
   <div class="mt-5">
         <h1>Formularios</h1>
@@ -18,6 +18,19 @@
                         <b-form-select v-model="select" :options="animales"></b-form-select>
                         <p>Selección: {{select}}</p>
                     </b-col>
+                    <!-- VAMOS A HACER UN FORM RADIO UTILIZANDO LA ETIQUETA <B-FORM-RADIO-GROUP> Y DENTRO DE LA ETIQUETA PONDREMOS NUESTRA COMUNICACION V-MODEL="RADIO" ESTO VA EN EL DATA EL RADIO, ESTO GUARDARA LA OPCION QUE SELECCIONE EL USUARIO. PERO ANTES DE ESO DEBEMOS HACER UNA COLUMNA PARA SEPARAR LOS FORMULARIOS https://bootstrap-vue.org/docs/components/form-radio-->
+                    <b-col md="3">
+                        <b-form-radio-group v-model="radio" :options="animalesRadio"></b-form-radio-group>
+                        <!-- ESTE PARRAFO PINTARA LA RESPUESTA -->
+                        <p>Radio: {{radio}}</p>
+                    </b-col>
+                    <!-- AHORA VAMOS A REALIZAR UNA SELECCION MULTIPLE Y ESTO SE GUARDARAN EN UN ARRAY Y LO MISMO HAY QUE HACER UNA COLUMNA -->
+                    <b-col md="3">
+                        <!-- FUNCIONA DE LA MISMA FORMA QUE LOS DEMAS SOLO QUE SE GUARDARAN DENTRO DE UN ARRAY. EL CHECK VA DENTRO DEL DATA. VAMOS A UTILIZAR EL MISMO ARRAY DE OBJETOS DEL ANTERIOR EL CUAL ERA ANIMALESRADIO -->
+                        <b-form-checkbox-group v-model="check" :options="animalesRadio"></b-form-checkbox-group>
+                        <!-- VAMOS A PINTAR LA RESPUESTA -->
+                        <p>Multiple: {{check}}</p>
+                    </b-col>
                 </b-row>
             </form>
 
@@ -31,17 +44,33 @@ export default {
     data() {
         return {
             texto: '',
+
+            // ESTE ES EL V-MODEL DE LA ETIQUETA <b-form-radio-group> VA A SER NULL Y LAS OPCIONES VAN A SER LAS MISMAS QUE LOS ANIMALES PERO SE LLAMARA ANIMALESRADIO Y DEBO HACER UN NUEVO ARRAY CON OBJETOS CON LOS MISMOS ANIMALES PERO SAQUARE EL VALUE NULL TEXT 
+            radio: null,
+
+            // ESTE V-MODEL CHECK VA EN EL FORMULARIO MULTIPLE EN EL ULTIMO
+            check: [],
+
             //AQUI EN EL SELECT SE GUARDARA LO QUE EL USUARIO COLOQUE COMO RESPUESTA
             select: null,
-            // ESTE ES UN ARRAY CON OBJETOS Y SIEMPRE COMIENZA CON CORCHETES Y DESPUES MOSTACHOS [{}] ESTO ESTA EN LA PAGINA DE BOOTSTRAP. LOS VALORES PERRO GATO Y PATO VAN A VIAJAR AL SELECT
+
+            // ESTE ES UN ARRAY CON OBJETOS Y SIEMPRE COMIENZA CON CORCHETES Y DESPUES MOSTACHOS [{}] ESTO ESTA EN LA PAGINA DE BOOTSTRAP. LOS VALORES PERRO GATO Y PATO VAN A VIAJAR AL SELECT. ESTE ARRAY DE OBJETOS VA EN EL SEGUNDO FORMULARIO EN :OPTIONS
             animales: [
                 {value: null, text: 'Seleccione un animal'},
+                {value: 'Perro', text: 'Guau Guauu'},
+                {value: 'Gato', text: 'Miau'},
+                {value: 'Pato', text: 'Cuack'},
+            ],
+
+            // ESTEW OTRO ARRAY DE OBJETOS VA EN EL TERCER FORMULARIO EN :OPTIONS ANIMALESRADIO Y SAQUE EL VALUE NULL
+             animalesRadio: [
                 {value: 'Perro', text: 'Guau Guauu'},
                 {value: 'Gato', text: 'Miau'},
                 {value: 'Pato', text: 'Cuack'},
             ]
         }
     },
+
     // VAMOS A DEJAR DE FORMA DINAMICA EL TRUE EN EL FORMULARIO PARA ESO HAY QUE HACER UN COMPUTED
     computed: {
         comprobar(){
