@@ -77,6 +77,7 @@ export default {
             // ESTE V-MODEL CHECK VA EN EL FORMULARIO MULTIPLE EN EL ULTIMO
             check: [],
 
+
             //AQUI EN EL SELECT SE GUARDARA LO QUE EL USUARIO COLOQUE COMO RESPUESTA
             select: null,
 
