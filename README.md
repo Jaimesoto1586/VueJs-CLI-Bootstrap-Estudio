@@ -15,5 +15,12 @@ npm run serve
 npm run build
 ```
 
+### Cypress Install
+vue add e2e-cypress
+
+# Run Cypress
+vue add e2e-cypress
+
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
