@@ -18,7 +18,7 @@
                 </b-card-img>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione inventore velit ipsam dignissimos, quis facere ipsa minus accusantium nemo, sint illum unde corrupti! Laboriosam, repudiandae ex odit facilis possimus corporis.</p>
                 <!-- VOY A PONER UN BOTON -->
-                <b-button variant="primary" href="#">QUE LINDA FOTO</b-button>
+                <b-button variant="primary" href="#">Comprar</b-button>
                 <br><br>
             </b-col>
 
@@ -28,7 +28,7 @@
                 </b-card-img>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione inventore velit ipsam dignissimos, quis facere ipsa minus accusantium nemo, sint illum unde corrupti! Laboriosam, repudiandae ex odit facilis possimus corporis.</p>
                 <!-- VOY A PONER UN BOTON -->
-                <b-button variant="dark" href="#">QUE LINDA FOTO</b-button>
+                <b-button variant="dark" href="#">Comprar</b-button>
                 <br><br>
             </b-col>
 
@@ -38,7 +38,7 @@
                 </b-card-img>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione inventore velit ipsam dignissimos, quis facere ipsa minus accusantium nemo, sint illum unde corrupti! Laboriosam, repudiandae ex odit facilis possimus corporis.</p>
                 <!-- VOY A PONER UN BOTON -->
-                <b-button variant="info" href="#">QUE LINDA FOTO</b-button>
+                <b-button variant="info" href="#">Comprar</b-button>
                 <br><br>
             </b-col>
         </b-row>
@@ -51,7 +51,7 @@
                 </b-card-img>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione inventore velit ipsam dignissimos, quis facere ipsa minus accusantium nemo, sint illum unde corrupti! Laboriosam, repudiandae ex odit facilis possimus corporis.</p>
                 <!-- VOY A PONER UN BOTON -->
-                <b-button variant="danger" href="#">QUE LINDA FOTO</b-button>
+                <b-button variant="danger" href="#">Comprar</b-button>
                 <br><br>
             </b-col>
 
@@ -61,7 +61,7 @@
                 </b-card-img>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione inventore velit ipsam dignissimos, quis facere ipsa minus accusantium nemo, sint illum unde corrupti! Laboriosam, repudiandae ex odit facilis possimus corporis.</p>
                 <!-- VOY A PONER UN BOTON -->
-                <b-button variant="success" href="#">QUE LINDA FOTO</b-button>
+                <b-button variant="success" href="#">Comprar</b-button>
                 <br><br>
             </b-col>
 
@@ -71,7 +71,7 @@
                 </b-card-img>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione inventore velit ipsam dignissimos, quis facere ipsa minus accusantium nemo, sint illum unde corrupti! Laboriosam, repudiandae ex odit facilis possimus corporis.</p>
                 <!-- VOY A PONER UN BOTON -->
-                <b-button variant="warning" href="#">QUE LINDA FOTO</b-button>
+                <b-button variant="warning" href="#">Comprar</b-button>
                 <br><br>
             </b-col>
         </b-row>
