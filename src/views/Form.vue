@@ -49,8 +49,7 @@
                     <b-form-input type="text" placeholder="Apellido" v-model="apellido" :state="comprobar1"></b-form-input>
                     <br>
                     <!-- DEBE IR TYPE PLACEHOLDER V-MODEL LO CAMBIE AHORA ES APELLIDO :STATE=COMPROBAR1 DEBO HACER UNO NUEVO EN COMPUTED (COMPUTED)   ESTOY OCUPANDO LOS MISMO QUE EN LOS EJEMPLOS ANTERIORES-->
-                    <b-form-input type="email" placeholder="Correo" v-model="correo" :state="comprobar2" required></b-form-input>
-                    
+                    <!-- <b-form-input type="email" placeholder="Correo" v-model="correo" :state="comprobar2" required></b-form-input> -->
                 </b-col>
             </b-row>
         </form>

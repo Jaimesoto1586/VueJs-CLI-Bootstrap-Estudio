@@ -25,6 +25,7 @@
               <b-nav-item :to="{name: 'Grid'}" active-class="active">Grid</b-nav-item>
               <b-nav-item :to="{name: 'Cards'}" active-class="active">Cards</b-nav-item>
               <b-nav-item :to="{name: 'Form'}" active-class="active">Form</b-nav-item>
+              <b-nav-item :to="{name: 'Formulario'}" active-class="active">Formulario</b-nav-item>
             </b-navbar-nav>
 
         </b-collapse>

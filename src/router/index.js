@@ -2,8 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Contact from '../views/Contact.vue'
-import NotFound from '../views/NotFound.vue'
 import Grid from '../views/Grid.vue'
+import NotFound from '../views/NotFound.vue'
 
 Vue.use(VueRouter)
 
@@ -49,6 +49,12 @@ Vue.use(VueRouter)
     component: () => import(/* webpackChunkName: "form" */ '../views/Form.vue')
   },
 
+  {
+    path: '/formulario',
+    name: 'Formulario',
+    // VOY HACER CON FUNCION FLECHA AHORA EL IMPORT
+    component: () => import(/* webpackChunkName: "formulario" */ '../views/Formulario.vue')
+  },
 
   // SIEMPRE PERO SIEMPRE LA PAGINA QUE DEJAMOS COMO NOTFOUND O NO ENCONTRADA TODO ESTO VA AL FINAL SIEMPREEEE PORQUE SI NO VA A ACARGAR ESTA PAGINA ANTES QUE LAS DEMAS
   {
