@@ -19,7 +19,7 @@ npm run build
 vue add e2e-cypress
 
 # Run Cypress
-vue add e2e-cypress
+npm run test:e2e
 
 
 ### Customize configuration
