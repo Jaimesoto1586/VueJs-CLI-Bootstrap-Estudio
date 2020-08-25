@@ -15,27 +15,28 @@
             </b-form-group>
 
 
-        <!-- SELECCIONA TU SECCION -->
-        <b-form-group id="input-group-3" label="Food:" label-for="input-3">
-            <b-form-select id="input-3" v-model="form.food" :options="foods" required></b-form-select>
-        </b-form-group>
+          <!-- SELECCIONA TU SECCION -->
+          <b-form-group id="input-group-3" label="Food:" label-for="input-3">
+              <b-form-select id="input-3" v-model="form.food" :options="foods" required></b-form-select>
+          </b-form-group>
 
-        <p>Consulta:</p>
-        <b-textarea placeholder="Escribir"></b-textarea>
+          <p>Consulta:</p>
+          <b-textarea placeholder="Escribir"></b-textarea>
 
-      <!-- <b-form-group id="input-group-4">
-        <b-form-checkbox-group v-model="form.checked" id="checkboxes-4">
-          <b-form-checkbox value="me">Check me out</b-form-checkbox>
-          <b-form-checkbox value="that">Check that out</b-form-checkbox>
-        </b-form-checkbox-group>
-      </b-form-group> -->
+          <!-- <b-form-group id="input-group-4">
+          <b-form-checkbox-group v-model="form.checked" id="checkboxes-4">
+            <b-form-checkbox value="me">Check me out</b-form-checkbox>
+            <b-form-checkbox value="that">Check that out</b-form-checkbox>
+            </b-form-checkbox-group>
+          </b-form-group> -->
 
-      <b-button class="mt-4" type="submit" variant="primary">Submit</b-button> <b-button class="mt-4" type="reset" variant="danger">Reset</b-button>
-    </b-form>
+         <b-button class="mt-4" type="submit" variant="primary">Submit</b-button> <b-button class="mt-4" type="reset" variant="danger">Reset</b-button>
+        </b-form>
     
         <b-card class="mt-3" header="Form Data Result">
         <pre class="m-0">{{ form }}</pre>
         </b-card>
+        
       </form>
   </div>
 </template>
