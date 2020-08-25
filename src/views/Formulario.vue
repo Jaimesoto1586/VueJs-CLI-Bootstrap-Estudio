@@ -30,8 +30,7 @@
         </b-form-checkbox-group>
       </b-form-group> -->
 
-      <b-button class="mt-4" type="submit" variant="primary">Submit</b-button>
-      <b-button class="mt-4" type="reset" variant="danger">Reset</b-button>
+      <b-button class="mt-4" type="submit" variant="primary">Submit</b-button> <b-button class="mt-4" type="reset" variant="danger">Reset</b-button>
     </b-form>
     
         <b-card class="mt-3" header="Form Data Result">

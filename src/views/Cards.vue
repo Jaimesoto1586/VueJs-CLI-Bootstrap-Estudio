@@ -3,12 +3,7 @@
 <!-- VOY A SEPARAR LOS BOTONES DE LA BARRA CON UN MT-5 CLASS BOOTSTRAP -->
     <div class="mt-5">
         <!-- PARA HACER UN BOTON SE PONE B-BUTTON . PARA CAMBIAR LOS COLORES RECORDAR QUE AHORA SE OCUPARA VARIANT. ESOS SON TODOS LOS BOTONES -->
-        <b-button variant="info">Info</b-button>
-        <b-button variant="success">Success</b-button>
-        <b-button variant="danger">Danger</b-button>
-        <b-button variant="primary">Primary</b-button>
-        <b-button variant="warning">Warning</b-button>
-        <b-button variant="dark">Dark</b-button>
+        <b-button variant="info">Info</b-button> <b-button variant="success">Success</b-button> <b-button variant="danger">Danger</b-button> <b-button variant="primary">Primary</b-button> <b-button variant="warning">Warning</b-button> <b-button variant="dark">Dark</b-button>
 
         <b-row class="mt-5">
             <!-- VAMOS A PONER LAS TARJETAS O CARDS https://bootstrap-vue.org/docs/components/card -->
