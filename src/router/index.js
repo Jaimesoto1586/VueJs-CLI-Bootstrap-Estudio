@@ -43,6 +43,13 @@ Vue.use(VueRouter)
   },
 
   {
+    path: '/revistas',
+    name: 'Revistas',
+    // VOY HACER CON FUNCION FLECHA AHORA EL IMPORT
+    component: () => import(/* webpackChunkName: "revistas" */ '../views/Revistas.vue')
+  },
+
+  {
     path: '/form',
     name: 'Form',
     // VOY HACER CON FUNCION FLECHA AHORA EL IMPORT
