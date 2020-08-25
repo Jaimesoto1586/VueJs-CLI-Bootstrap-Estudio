@@ -23,7 +23,7 @@
 
           <!-- AREA DE TEXTO DE CONSULTA -->
           <p>Consulta:</p>
-          <b-textarea placeholder="Escribir"></b-textarea>
+          <b-textarea v-model="form.textarea" placeholder="Escribir" :state="comprobartextarea"></b-textarea>
 
 
           <!-- BOTONES -->
@@ -50,6 +50,7 @@
           name: '',
           email: '',
           secciones: null,
+          textarea:''
         },
         secciones: [{ text: 'Seleccione', value: null }, 'Albumes', 'Revistas', 'Promociones'],
         show: true
@@ -66,12 +67,13 @@
         this.form.email = ''
         this.form.name = ''
         this.form.secciones = null
+        this.form.textarea = ''
         // Trick to reset/clear native browser form validation state
         this.show = false
         this.$nextTick(() => {
           this.show = true
         })
-      }
+      },
     },
     computed: {
       comprobaremail(){
@@ -79,6 +81,9 @@
       },
       comprobarname(){
         return this.form.name.length > 0 ? true : false
+      },
+      comprobartextarea(){
+        return this.form.textarea.length > 0 ? true : false
       },
     }
   }
