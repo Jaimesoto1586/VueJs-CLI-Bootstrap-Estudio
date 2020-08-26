@@ -7,9 +7,4 @@ describe('My First Test', () => {
     cy.contains('h1', 'Welcome to Your Vue.js App')
   })
 
-  // it('Visits the app root url', () => {
-  //   cy.visit('/')
-  //   cy.get('#formulario').click()
-  //   cy.contains('h1', 'Formulario')
-  // })
 })
