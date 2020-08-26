@@ -52,6 +52,8 @@
           secciones: null,
           textarea:''
         },
+        // PARA EL ALERT CREE UN DATA FALE Y LUEGO LO LLAMO EN METHODS CON UN THIS Y LLAMO TAMBIEN A TODOS LOS DATAS CON THIS TAMBIEN Y LUEGO REALIZO UN IF LLAMANDO A LA FUNCION this.formHasErrors Y FINALMENTE EL RETURN ALERT CON LO QUE QUIERO QUE DIGA
+        formHasErrors: false,
         secciones: [{ text: 'Seleccione', value: null }, 'Albumes', 'Revistas', 'Promociones'],
         show: true
       }
@@ -59,6 +61,10 @@
     methods: {
       onSubmit(evt) {
         evt.preventDefault()
+        this.formHasErrors = this.form.email === '' || this.form.name === '' || this.form.secciones === null || this.form.textarea === ''
+        if(this.formHasErrors) {
+          return alert('!! Todos los campos son obligatorios ¡¡')
+        }
         alert(JSON.stringify(this.form))
       },
       onReset(evt) {
